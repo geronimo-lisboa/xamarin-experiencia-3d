@@ -7,6 +7,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using Android.Content.PM;
+using TesteApp3DVisualStudio.views;
 
 namespace TesteApp3DVisualStudio
 {
@@ -20,7 +21,8 @@ namespace TesteApp3DVisualStudio
                 Icon = "@mipmap/icon")]
     public class MainActivity : Activity
     {
-        GLView1 view;
+		//GLView1 view;
+		TesteGLView view;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -28,8 +30,9 @@ namespace TesteApp3DVisualStudio
             var manager = GetSystemService(Context.ActivityService) as ActivityManager;
             if (manager.DeviceConfigurationInfo.ReqGlEsVersion >= 0x30000)
             {
-                // Create our OpenGL view, and display it
-                view = new GLView1(this);
+				// Create our OpenGL view, and display it
+				//view = new GLView1(this);
+				view = new TesteGLView(this);
                 SetContentView(view);
             }
             else

@@ -51,6 +51,7 @@
     <Compile Include="BallModel.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="views\TesteGLView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -68,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
+    <Folder Include="views\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Shaders\Shader.fsh" />
